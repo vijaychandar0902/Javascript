@@ -3,9 +3,13 @@
 // Increment the count variable when the button is clicked (log it out)
 // Change the count-el in the HTML to reflect the new count
 
+let count = 0
+
 function increment(){
-    console.log("the button was clicked")
-    count = parseInt(document.getElementById('count').innerHTML, 10);
     count = count + 1
-    document.getElementById('count').innerHTML = count
+    countEl = document.getElementById('count')
+    countEl.innerHTML= count    
 }
+
+// Create a function, save() which logs out the count when it's called
+

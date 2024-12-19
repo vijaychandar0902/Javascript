@@ -136,3 +136,104 @@ IncrementLap()
 IncrementLap()
 
 console.log(lapsCompleted)
+
+function increment(){
+    console.log("the button was clicked")
+    count = parseInt(document.getElementById('count').innerHTML, 10);
+    count = count + 1
+    document.getElementById('count').innerHTML = count
+}
+
+let countT = 0
+
+function Iincrement(){
+    console.log("Button Clicked")
+    countT += 1
+    console.log(count)
+}
+
+// let countEl = document.getElementById("count")
+
+// console.log(countEl)
+
+let countEl = document.getElementById("count") // Pass in arguments otherwise the function will just keep running in the wild like a chef without ingredients to cook
+
+console.log(countEl) // Pass in arguments otherwise the function will just keep running in the wild like a chef without ingredients to cook
+
+// let count = 0
+
+function increment() {
+    count = count + 1
+    countEl.innerHTML = count
+}
+
+{/* 
+<div id="example">
+    <p>Hello <strong>World</strong></p>
+</div>
+
+<script>
+    // innerHTML includes HTML tags
+    console.log(document.getElementById('example').innerHTML); 
+    // Output: <p>Hello <strong>World</strong></p>
+
+    // innerText gets only the text, ignoring the tags
+    console.log(document.getElementById('example').innerText); 
+    // Output: Hello World
+</script> 
+*/}
+
+
+function save(){
+    console.log('Save was clicked')
+    console.log(count)
+}
+
+save()
+
+// let username = "Vijay"
+// console.log(username)
+
+// let message = "You have three new notifications"
+// console.log(message)
+
+// console.log(message + "" + username)
+
+let username = "Vijay"
+console.log(username)
+
+let message = "You have three new notifications"
+console.log(message)
+
+console.log(message + ", " + username + '!')
+
+messageToUser = message + ", " + username + '!'
+
+console.log("Hi from messageToUser", messageToUser)
+
+name = 'Vijay'
+greeting = 'Vanakam, En peru '
+
+myGreeting = greeting + name
+
+console.log(myGreeting)
+
+let points = 4
+let bonusPoints = "10"
+
+let totalPoints = points + bonusPoints
+console.log(totalPoints)
+
+console.log(4 + 5);
+console.log('4' + '5');
+console.log('4' + 5);
+console.log(4 + '5');
+
+welcomeEl = document.getElementById("welcome-el");
+let name = 'Vijay';
+let greeting = 'Welcome back lil bro ' ;
+welcomeEl.innerText = greeting + name;
+
+welcomeEl.innerText = welcomeEl.innerText + '👋'
+
+welcomeEl.innerText += '👋'
